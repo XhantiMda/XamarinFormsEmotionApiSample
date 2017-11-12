@@ -11,7 +11,7 @@ namespace EmotionSample.Services
     {
         private static async Task<Emotion[]> AnalyzeImageAsync(Stream stream)
         {
-            var emotionClient = new EmotionServiceClient("40d5cb0944544b6689f3eb27d499099a");
+            var emotionClient = new EmotionServiceClient("Key Goes Here");
             return await emotionClient.RecognizeAsync(stream);
         } 
 
